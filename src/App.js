@@ -143,7 +143,7 @@ function App() {
               </h2>
               <img
                 src={Friends}
-                className="object-contain h-56 w-full m-4 p-4"
+                className="object-contain h-56 w-full m-4 p-4" alt="Frnds"
               />
               <div className="flex justify-center">
                 <button
@@ -158,7 +158,7 @@ function App() {
               <h2 className="flex justify-center text-yellow-500 text-2xl">
                 How I Met Your Mother
               </h2>
-              <img src={HIMYM} className="object-contain h-56 w-full m-4 p-4" />
+              <img src={HIMYM} className="object-contain h-56 w-full m-4 p-4" alt="HIMYM"/>
               <div className=" flex justify-center">
                 <button
                   className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
