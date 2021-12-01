@@ -116,20 +116,17 @@ function App() {
   };
 
   useEffect(() => {
-    console.log(currentUser);
-    if (!currentUser) {
-      Swal.fire({
-        title: "Connect with your MetaMask Wallet",
-        showCancelButton: true,
-        confirmButtonText: "Connect",
-      }).then((result) => {
-        /* Read more about isConfirmed, isDenied below */
-        if (result.isConfirmed) {
-          handleConnectWallet();
-        } else if (result.isDenied) {
-        }
-      });
-    }
+    Swal.fire({
+      title: "Connect with your MetaMask Wallet",
+      showCancelButton: true,
+      confirmButtonText: "Connect",
+    }).then((result) => {
+      /* Read more about isConfirmed, isDenied below */
+      if (result.isConfirmed) {
+        handleConnectWallet();
+      } else if (result.isDenied) {
+      }
+    });
   }, []);
   return (
     <div className="bg-gray-900 h-screen ">
